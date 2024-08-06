@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Page</title>
+    <script>  
+        // JavaScript 函数来处理按钮点击事件  
+        function showMoreImages() {  
+            // 假设我们有两张图片，第一张是初始显示的，第二张是点击后显示的  
+            var imgElement = document.getElementById('mainImage');  
+            if (imgElement.src.match('image1.jpg')) {  
+                imgElement.src = 'image2.jpg'; // 显示第二张图片  
+            } else {  
+                imgElement.src = 'image1.jpg'; // 回到第一张图片  
+            }  
+        }  
+  
+        function navigateToAnotherPage() {  
+            // 跳转到另一个页面  
+            window.location.href = 'https://new.com';  
+        }  
+    </script> 
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <img id="mainImage" src="image1.jpg" alt="Main Image" style="width:300px;height:auto;">  
+    <button onclick="showMoreImages()">显示更多图片</button>  
+    <button onclick="navigateToAnotherPage()">跳转到另一个页面</button>  
+    <!-- The rest of the HTML content -->  
+</body>
+</html>
